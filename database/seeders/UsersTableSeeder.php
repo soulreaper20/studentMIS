@@ -15,14 +15,14 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::where('email', 'ankit_subedi@hotmail.com')->first();
+        $user = User::where('email', 'admin@admin.com')->first();
 
         if(!$user) {
         	User::create([
-        		'name' => 'Ankit Subedi',
-        		'email' => 'ankit_subedi@hotmail.com',
+        		'name' => 'Admin',
+        		'email' => 'admin@admin.com',
         		'role' => 'superAdmin',
-        		'password' => Hash::make('Rubious12'),
+        		'password' => Hash::make('Admin123'),
             'faculty' => 'Science']);
 
         }
